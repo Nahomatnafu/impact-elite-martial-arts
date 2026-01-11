@@ -5,24 +5,37 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white min-h-[600px] flex items-center">
+        {/* Hero Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/assets/hero/impact-elite-hero-v01.jpg"
+            alt="Impact Elite Martial Arts Training"
+            fill
+            className="object-cover opacity-40"
+            style={{ objectPosition: 'center 35%' }}
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 w-full">
           <div className="text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               <span className="text-red-600">UNLEASH</span> YOUR POTENTIAL
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto drop-shadow-lg">
               Train with a World Champion. Transform your body, mind, and spirit at Impact Elite Martial Arts and Fitness.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="/trial" 
+              <Link
+                href="/trial"
                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all transform hover:scale-105 shadow-lg"
               >
                 Start Your FREE 2-Week Trial
               </Link>
-              <Link 
-                href="/programs" 
+              <Link
+                href="/programs"
                 className="bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-lg text-lg font-bold transition-all transform hover:scale-105 shadow-lg"
               >
                 Explore Programs
@@ -196,8 +209,13 @@ export default function Home() {
                 Learn More About Master Hinds
               </Link>
             </div>
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <p className="text-gray-500 text-center px-4">Instructor Photo Placeholder<br/>(Add your photo here)</p>
+            <div className="relative rounded-lg overflow-hidden shadow-2xl h-96 lg:h-[500px]">
+              <Image
+                src="/assets/instructor/impact-elite-instructor.jpg"
+                alt="Master Terrance Hinds"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

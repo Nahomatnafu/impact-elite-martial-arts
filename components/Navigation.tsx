@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +12,15 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold">
-              <span className="text-red-600">IMPACT ELITE</span>
-              <span className="text-gray-400 text-sm block">Martial Arts & Fitness</span>
-            </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/assets/impact-elite-logo-v02.jpg"
+              alt="Impact Elite Martial Arts & Fitness"
+              width={120}
+              height={60}
+              className="h-14 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
