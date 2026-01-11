@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -29,8 +30,17 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-20 relative">
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/impact-elite-trial.jpg"
+            alt="Contact Background"
+            fill
+            className="object-cover opacity-30"
+            style={{ objectPosition: 'center 25%' }}
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Get in <span className="text-red-600">Touch</span>
           </h1>

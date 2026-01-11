@@ -5,8 +5,17 @@ export default function Instructor() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-20">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/assets/impact-elite-program.jpg"
+            alt="Impact Elite Martial Arts"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Meet Your <span className="text-red-600">Instructor</span>
           </h1>
@@ -67,21 +76,45 @@ export default function Instructor() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-              <div className="text-6xl mb-4">🏆</div>
+              <div className="flex justify-center mb-4">
+                <Image
+                  src="/assets/gold-trophy.png"
+                  alt="Trophy"
+                  width={80}
+                  height={80}
+                  className="object-contain"
+                />
+              </div>
               <h3 className="text-2xl font-bold mb-2 text-red-600">ISKA World Cup</h3>
               <p className="text-gray-600 mb-2">Champion</p>
               <p className="text-gray-500">Sydney, Australia</p>
             </div>
-            
+
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-              <div className="text-6xl mb-4">🏆</div>
+              <div className="flex justify-center mb-4">
+                <Image
+                  src="/assets/gold-trophy.png"
+                  alt="Trophy"
+                  width={80}
+                  height={80}
+                  className="object-contain"
+                />
+              </div>
               <h3 className="text-2xl font-bold mb-2 text-red-600">WMAC World Cup</h3>
               <p className="text-gray-600 mb-2">Champion</p>
               <p className="text-gray-500">Chumotov, Czech Republic</p>
             </div>
-            
+
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-              <div className="text-6xl mb-4">🏆</div>
+              <div className="flex justify-center mb-4">
+                <Image
+                  src="/assets/gold-trophy.png"
+                  alt="Trophy"
+                  width={80}
+                  height={80}
+                  className="object-contain"
+                />
+              </div>
               <h3 className="text-2xl font-bold mb-2 text-red-600">WKC Pan American</h3>
               <p className="text-gray-600 mb-2">Champion</p>
               <p className="text-gray-500">San Juan, Puerto Rico</p>
@@ -150,17 +183,25 @@ export default function Instructor() {
       </section>
 
       {/* Philosophy */}
-      <section className="py-20 bg-gray-900 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 bg-gray-900 text-white">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/assets/bruce-lee.jpg"
+            alt="Bruce Lee"
+            fill
+            className="object-cover opacity-20"
+          />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Teaching <span className="text-red-600">Philosophy</span>
           </h2>
           <blockquote className="text-xl italic text-gray-300 mb-8">
-            &quot;Martial arts is more than just physical training. It&apos;s about building character,
-            developing discipline, and unlocking your full potential. Every student who walks through
-            our doors has the ability to achieve greatness - my job is to help them discover it.&quot;
+            &quot;Empty your mind, be formless. Shapeless, like water. If you put water into a cup,
+            it becomes the cup. You put water into a bottle and it becomes the bottle. You put it in
+            a teapot, it becomes the teapot. Now, water can flow or it can crash. Be water, my friend.&quot;
           </blockquote>
-          <p className="text-gray-400">- Master Terrance Hinds</p>
+          <p className="text-gray-400">― Bruce Lee</p>
         </div>
       </section>
 

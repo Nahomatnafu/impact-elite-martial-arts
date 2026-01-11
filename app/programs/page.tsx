@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Programs() {
   return (
@@ -20,8 +21,13 @@ export default function Programs() {
       <section id="taekwondo" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-gray-200 rounded-lg h-80 flex items-center justify-center">
-              <p className="text-gray-500 text-center px-4">Taekwondo Training Photo<br/>(Add your photo here)</p>
+            <div className="relative rounded-lg h-80 overflow-hidden">
+              <Image
+                src="/assets/impact-elite-taekwondo.jpg"
+                alt="Taekwondo Training"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <h2 className="text-4xl font-bold mb-6">
@@ -124,8 +130,14 @@ export default function Programs() {
                 Start Your Free Trial
               </Link>
             </div>
-            <div className="bg-gray-200 rounded-lg h-80 flex items-center justify-center order-1 lg:order-2">
-              <p className="text-gray-500 text-center px-4">Personal Training Photo<br/>(Add your photo here)</p>
+            <div className="relative rounded-lg h-80 overflow-hidden order-1 lg:order-2">
+              <Image
+                src="/assets/impact-elite-personal.jpg"
+                alt="Personal Training"
+                fill
+                className="object-cover"
+                style={{ objectPosition: 'center 25%' }}
+              />
             </div>
           </div>
         </div>
@@ -135,8 +147,14 @@ export default function Programs() {
       <section id="cardio-kickboxing" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-gray-200 rounded-lg h-80 flex items-center justify-center">
-              <p className="text-gray-500 text-center px-4">Cardio Kickboxing Photo<br/>(Add your photo here)</p>
+            <div className="relative rounded-lg h-80 overflow-hidden">
+              <Image
+                src="/assets/impact-elite-cardio.jpg"
+                alt="Cardio Kickboxing"
+                fill
+                className="object-cover"
+                style={{ objectPosition: 'center 45%' }}
+              />
             </div>
             <div>
               <h2 className="text-4xl font-bold mb-6">
@@ -189,8 +207,17 @@ export default function Programs() {
       </section>
 
       {/* Class Options */}
-      <section className="py-20 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gray-900 text-white relative">
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/impact-elite-style.jpg"
+            alt="Training Style Background"
+            fill
+            className="object-cover opacity-30"
+            style={{ objectPosition: 'center 20%' }}
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-12">
             Choose Your <span className="text-red-600">Training Style</span>
           </h2>
@@ -226,8 +253,16 @@ export default function Programs() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-16 relative">
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/impact-elite-trial.jpg"
+            alt="Free Trial Background"
+            fill
+            className="object-cover opacity-30"
+          />
+        </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-xl mb-8">
             Try any of our programs FREE for 2 weeks - no commitment required!

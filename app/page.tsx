@@ -12,11 +12,11 @@ export default function Home() {
             src="/assets/hero/impact-elite-hero-v01.jpg"
             alt="Impact Elite Martial Arts Training"
             fill
-            className="object-cover opacity-40"
+            className="object-cover opacity-75"
             style={{ objectPosition: 'center 35%' }}
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/50"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 w-full">
