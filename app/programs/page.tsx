@@ -5,13 +5,22 @@ export default function Programs() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-20">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/assets/impact-elite-program.jpg"
+            alt="Our Programs Background"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Our <span className="text-red-600">Programs</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Whether you&apos;re looking to learn self-defense, get in shape, or compete at the highest level, 
+            Whether you&apos;re looking to learn self-defense, get in shape, or compete at the highest level,
             we have a program designed for you.
           </p>
         </div>
