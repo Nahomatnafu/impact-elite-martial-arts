@@ -8,10 +8,11 @@ export default function Programs() {
       <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-20">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/impact-elite-program.jpg"
+            src="/assets/impact-elite-our-program.jpg"
             alt="Our Programs Background"
             fill
             className="object-cover opacity-30"
+            style={{ objectPosition: 'center 50%' }}
             priority
           />
         </div>
