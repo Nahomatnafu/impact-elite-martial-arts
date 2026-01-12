@@ -21,12 +21,13 @@ export default function Programs() {
       <section id="taekwondo" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-lg h-80 overflow-hidden">
+            <div className="relative rounded-lg h-96 overflow-hidden">
               <Image
                 src="/assets/impact-elite-taekwondo.jpg"
                 alt="Taekwondo Training"
                 fill
                 className="object-cover"
+                style={{ objectPosition: 'center 58%' }}
               />
             </div>
             <div>
@@ -130,7 +131,7 @@ export default function Programs() {
                 Start Your Free Trial
               </Link>
             </div>
-            <div className="relative rounded-lg h-80 overflow-hidden order-1 lg:order-2">
+            <div className="relative rounded-lg h-96 overflow-hidden order-1 lg:order-2">
               <Image
                 src="/assets/impact-elite-personal.jpg"
                 alt="Personal Training"
@@ -147,7 +148,7 @@ export default function Programs() {
       <section id="cardio-kickboxing" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-lg h-80 overflow-hidden">
+            <div className="relative rounded-lg h-96 overflow-hidden">
               <Image
                 src="/assets/impact-elite-cardio.jpg"
                 alt="Cardio Kickboxing"
